@@ -1,0 +1,61 @@
+.nav-bar {
+  display: flex;
+  width: 100%;
+  max-width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3a829;
+  padding: 0.75rem 1rem;
+  margin-block: 1rem;
+  border-radius: 0.25rem;
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .logo {
+    min-width: 6rem;
+    color: #000;
+  }
+
+  .nav-menu {
+    display: flex;
+    width: 100%;
+    max-width: 20rem;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    .nav-menu-item,
+    a {
+      color: #fff;
+
+      &:hover {
+        color: #1db619;
+      }
+    }
+  }
+
+  .nav-authentication {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 25%;
+    gap: 1.5rem;
+
+    .primary-btn {
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      border: 2px solid #fff;
+      color: #fff;
+      background-color: transparent;
+
+      &:hover {
+        background: #1db619;
+        border: 2px solid #1db619;
+        cursor: pointer;
+      }
+    }
+  }
+}
